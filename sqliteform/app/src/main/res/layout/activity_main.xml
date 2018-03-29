@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.abidin.sqliteform.MainActivity"
+    android:orientation="vertical">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="40dp">
+
+    <EditText
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:id="@+id/editsearch"
+        />
+
+    <Button
+        android:text="Search"
+        android:layout_width="90dp"
+        android:layout_height="50dp"
+        android:id="@+id/buttonsearch"
+        />
+
+
+</LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginBottom="10dp"
+
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/edit_nama"
+            android:layout_width="700dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_weight="0.4"
+            android:hint="masukan nama"
+            android:textAlignment="center"
+            android:text="" />
+
+        <EditText
+            android:id="@+id/edit_nim"
+            android:layout_width="700dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/edit_nama"
+            android:layout_weight="0.35"
+            android:hint="masukan nim"
+            android:textAlignment="center"
+            android:text="" />
+
+        <EditText
+            android:id="@+id/edit_keminatan"
+            android:layout_width="700dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/edit_nim"
+            android:layout_weight="0.35"
+            android:hint="masukan keminatan"
+            android:text=""
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/btn_tambah"
+            android:layout_width="7000dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/edit_keminatan"
+            android:layout_weight="0.25"
+            android:text="tambah" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginBottom="10dp"
+
+        android:orientation="vertical">
+        <EditText
+            android:id="@+id/edit_namadosen"
+            android:layout_width="700dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_weight="0.4"
+            android:hint="nama dosen pembimbing"
+            android:textAlignment="center"
+            android:text="" />
+
+        <EditText
+            android:id="@+id/edit_nidk"
+            android:layout_width="700dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/edit_namadosen"
+            android:layout_weight="0.35"
+            android:hint="masukan nidk"
+            android:text=""
+            android:textAlignment="center" />
+
+        <EditText
+            android:id="@+id/edit_namaptn"
+            android:layout_width="700dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/btn_tambah2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_weight="0.35"
+            android:hint="Perguruan Tinggi"
+            android:text=""
+            android:textAlignment="center" />
+
+        <Button
+            android:id="@+id/btn_tambah2"
+            android:layout_width="7000dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_weight="0.25"
+            android:text="tambah" />
+
+    </RelativeLayout>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        tools:listitem="@layout/row_view"></android.support.v7.widget.RecyclerView>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerview2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        tools:listitem="@layout/row_view2"></android.support.v7.widget.RecyclerView>
+
+
+
+</LinearLayout>
